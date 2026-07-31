@@ -32,3 +32,24 @@ nav ul {
     gap: 1rem;
 }
 
+.hero {
+    margin: 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: black;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: white
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: white;
+}
