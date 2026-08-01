@@ -8,7 +8,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #333333;
-    background-color: #f1f0e9;
+    background-color: #faf9f5;
 }
 
 ul { list-style: none; }
@@ -27,20 +27,28 @@ header {
     color: white;
 }
 
+.site-name{
+    margin-left: 1.5rem;
+}
+
+.nav-links {
+    margin-right: 1.5rem;
+}
+
 nav ul {
     display: flex;
     gap: 1rem;
 }
 
 .hero {
-    margin: 2rem;
+    margin: 2rem 17rem;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 5rem 2rem;
-    background-color: black;
+    justify-content: flex-start;
+    padding: 5rem 8rem;
+    background-color: rgb(50, 50, 50);
+    min-height: 60vh;
 }
 
 .hero h1 {
@@ -51,5 +59,17 @@ nav ul {
 
 .hero p {
     font-size: 1.2rem;
+    color: white;
+}
+
+.about {
+    margin: 2rem 17rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 8rem;
+    background-color: rgb(50, 50, 50);
+    min-height: 20vh;
     color: white;
 }
