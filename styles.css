@@ -4,36 +4,44 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #0c447c;
+    --secondary-color: #ba7517;
+    --background-color: #f1efe8;
+    --text-color: #2c2c2a;
+    --box-color: #2c2c2a;
+    --shadow-color: #0000001a;
+}
+
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     line-height: 1.6;
-    color: #333333;
-    background-color: rgb(250, 249, 245);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6,
+button,
+nav a,
+.site-name {
+  font-family: 'Poppins', sans-serif;
 }
 
 ul { list-style: none; }
 ol { list-style: none; }
 a { text-decoration: none; color: inherit; }
 
-.top-nav {
+.site-header {
+    padding-block: 1rem;
+    border-bottom: 2px solid var(--box-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
+    color: var(--primary-color);
+}
+
+.header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: rgb(0, 48, 143);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header {
-    color: white;
-}
-
-.site-name{
-    margin-left: 1.5rem;
-}
-
-.nav-links {
-    margin-right: 1.5rem;
 }
 
 nav ul {
@@ -41,36 +49,42 @@ nav ul {
     gap: 1rem;
 }
 
-.hero-container {
+.container {
+    width: min(1300px, 100% - 100px);
+    margin-inline: auto;
+}
+
+.hero-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 2rem 17rem;
-    border-radius: 20px;
-    padding: 5rem 8rem;
-    background-color: rgb(50, 50, 50);
+
+    margin-block: 2rem;
     min-height: 60vh;
+    padding: 3rem clamp(1.5rem, 4vw, 4rem);
+
+    border-radius: 20px;
+    border: 2px solid var(--box-color);
 }
 
-.hero-container h1 {
+.hero-text h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: white
+    color: var(--secondary-color);
 }
 
-.hero-container p {
+.hero-text p {
     font-size: 1.2rem;
-    color: white;
 }
 
 .navigate-card-container {
-    background-color: rgb(170, 170, 170);
-    border: 3px solid #e5e5e5;
-    border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     min-width: 40vh;
+
+    border: 3px solid var(--box-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 .nav-steps {
@@ -92,24 +106,26 @@ nav ul {
     align-items: center;
     flex-shrink: 0;
 
-    background-color: #00308f;
+    border: 2px solid var(--box-color);
     width: 27px;
     height: 27px;
-    border-radius: 50%;
     
-    color: white;
+    border-radius: 50%;
+    background-color: #ba7617c4;
     font-size: 0.9rem;
     font-weight: bold;
 }
 
 .about {
-    margin: 2rem 17rem;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 2rem 8rem;
-    background-color: rgb(50, 50, 50);
+
+    margin-block: 2rem;
     min-height: 20vh;
-    color: white;
+    padding: 2rem 8rem;
+    
+    border-radius: 20px;
+    border: 2px solid var(--box-color);
+    color: var(--text-color);
 }
