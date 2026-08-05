@@ -16,6 +16,7 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
     line-height: 1.6;
+    font-size: 1.2rem;
     color: var(--text-color);
     background-color: var(--background-color);
 }
@@ -31,11 +32,16 @@ ul { list-style: none; }
 ol { list-style: none; }
 a { text-decoration: none; color: inherit; }
 
-.site-header {
+header {
     padding-block: 1rem;
     border-bottom: 2px solid var(--box-color);
     box-shadow: 0 4px 6px var(--shadow-color);
     color: var(--primary-color);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--background-color);
 }
 
 .header-inner {
@@ -72,10 +78,6 @@ nav ul {
     font-size: 3rem;
     margin-bottom: 10px;
     color: var(--secondary-color);
-}
-
-.hero-text p {
-    font-size: 1.2rem;
 }
 
 .navigate-card-container {
@@ -123,9 +125,15 @@ nav ul {
 
     margin-block: 2rem;
     min-height: 20vh;
-    padding: 2rem 8rem;
+    padding: 2rem clamp(1.5rem, 4vw, 4rem);
     
     border-radius: 20px;
     border: 2px solid var(--box-color);
     color: var(--text-color);
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
 }
