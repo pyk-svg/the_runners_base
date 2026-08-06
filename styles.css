@@ -60,18 +60,19 @@ nav ul {
     margin-inline: auto;
 }
 
-.hero-box {
+.box {
     display: flex;
-    flex-direction: row;
+    padding: 3rem clamp(1.5rem, 4vw, 4rem);
+    margin-block: 2rem;
+    border-radius: 20px;
+    border: 2px solid var(--box-color);
+}
+
+.hero-box {
     justify-content: space-between;
     align-items: flex-start;
 
-    margin-block: 2rem;
     min-height: 60vh;
-    padding: 3rem clamp(1.5rem, 4vw, 4rem);
-
-    border-radius: 20px;
-    border: 2px solid var(--box-color);
 }
 
 .hero-text h1 {
@@ -119,17 +120,10 @@ nav ul {
 }
 
 .about {
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 
-    margin-block: 2rem;
     min-height: 20vh;
     padding: 2rem clamp(1.5rem, 4vw, 4rem);
-    
-    border-radius: 20px;
-    border: 2px solid var(--box-color);
-    color: var(--text-color);
 }
 
 .about h2 {
