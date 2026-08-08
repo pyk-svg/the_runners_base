@@ -142,6 +142,51 @@ footer {
     margin: 1rem;
 }
 
+/* Guide Directory */
+#guide-dir-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#guide-dir-header {
+    position: fixed;
+    width: 100%;
+}
+
+.guide-dir {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+#guide-dir-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.guide-dir-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    max-width: 500px;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0;
+}
+
+.guide-dir-card:hover {
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transform: translateY(-2px);
+    border: 3px solid var(--primary-color);
+}
+
+.guide-dir-card:hover h3 {
+    color: var(--secondary-color);
+}
+
 /* Article Site (mobile first) */
 
 .page-content {
